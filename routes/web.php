@@ -10,7 +10,10 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::auth();
 
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('reservation',  ['as' => 'reservation.index',    'uses' => 'ReservationController@index']);
