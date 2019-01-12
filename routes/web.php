@@ -17,3 +17,4 @@ Route::get('/', function () {
 });
 
 Route::get('reservation',  ['as' => 'reservation.index',    'uses' => 'ReservationController@index']);
+Route::get('reservationok',  ['as' => 'reservation.show',    'uses' => 'ReservationController@show']);
