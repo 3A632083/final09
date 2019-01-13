@@ -20,5 +20,8 @@ Route::get('/home', function () {
     return view('home.home');
 });
 
+Route::get('welcome',  ['as' => 'welcome.index',    'uses' => 'WelcomeController@index']);
 Route::get('reservation',  ['as' => 'reservation.index',    'uses' => 'ReservationController@index']);
 Route::get('reservationok',  ['as' => 'reservation.show',    'uses' => 'ReservationController@show']);
+Route::get('wait',  ['as' => 'wait.index',    'uses' => 'WaitController@index']);
+Route::get('/insertwait/{id}', 'WaitController@create');
