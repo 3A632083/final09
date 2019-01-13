@@ -27,7 +27,7 @@ class WaitController extends Controller
      */
     public function create()
     {
-        //
+        return view('insertwait');
     }
 
     /**

@@ -24,3 +24,4 @@ Route::get('welcome',  ['as' => 'welcome.index',    'uses' => 'WelcomeController
 Route::get('reservation',  ['as' => 'reservation.index',    'uses' => 'ReservationController@index']);
 Route::get('reservationok',  ['as' => 'reservation.show',    'uses' => 'ReservationController@show']);
 Route::get('wait',  ['as' => 'wait.index',    'uses' => 'WaitController@index']);
+Route::get('/insertwait/{id}', 'WaitController@create');
