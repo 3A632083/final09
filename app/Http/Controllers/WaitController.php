@@ -14,7 +14,10 @@ class WaitController extends Controller
      */
     public function index()
     {
-        //
+        $wenxins = Wait::orderby('user_id')->get();
+        $total = $wenxins->count('user_id');
+        $data=['total' => $total];
+        return view('wait',$data);
     }
 
     /**
