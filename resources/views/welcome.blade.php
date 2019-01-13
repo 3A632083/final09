@@ -87,7 +87,7 @@
 
         <div class="links">
             <a href="">預約訂位</a>
-            <a href="">現場候位</a>
+            <a href="{{route('wait.index')}}">現場候位</a>
         </div>
     </div>
 </div>
