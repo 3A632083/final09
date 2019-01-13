@@ -10,5 +10,8 @@ class Wait extends Model
 
     protected $fillable = ['name','phone','people','status'];
 
-
+    public function user()
+    {
+        return $this->belongsTo(User::class);
+    }
 }
