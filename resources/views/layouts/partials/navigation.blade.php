@@ -14,22 +14,10 @@
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
                 <li>
-                    <a href="{{route('store.index')}}"><h5>店家資訊</h5></a>
+                    <a href=""><h5>預約訂位</h5></a>
                 </li>
                 <li>
-                    <a href="{{route('member.show')}}"><h5>會員基本資料</h5></a>
-                </li>
-                <li>
-                    <a href="{{route('task.index')}}"><h5>線上訂位</h5></a>
-                </li>
-                <li>
-                    <a href="{{route('searchreservation.show')}}"><h5>查詢訂位資訊</h5></a>
-                </li>
-                <li>
-                    <a href="{{route('meal.index')}}"><h5>餐點介紹</h5></a>
-                </li>
-                <li>
-                    <a href="{{route('post.show')}}"><h5>最新消息</h5></a>
+                    <a href="{{route('wait.index')}}"><h5>現場候位</h5></a>
                 </li>
             </ul>
         </div>
