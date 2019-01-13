@@ -14,7 +14,7 @@ class ReservationController extends Controller
      */
     public function index()
     {
-        //
+        return view('reservation');
     }
 
     /**
@@ -46,7 +46,7 @@ class ReservationController extends Controller
      */
     public function show(Reservation $reservation)
     {
-        //
+        return view('reservationok');
     }
 
     /**

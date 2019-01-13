@@ -8,7 +8,7 @@
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet" type="text/css">
-
+    <link rel="Shortcut Icon" type="image/x-icon" href="img/favicon.ico" />
     <!-- Styles -->
     <style>
         html, body {
