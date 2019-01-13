@@ -32,4 +32,9 @@ class User extends Authenticatable
     {
         return $this->hasOne(Wait::class);
     }
+
+    public function reservations()
+    {
+        return $this->hasMany(Reservation::class);
+    }
 }
