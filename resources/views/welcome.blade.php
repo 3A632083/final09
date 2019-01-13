@@ -86,13 +86,10 @@
         </div>
 
         <div class="links">
-            {{--<a href="{{route('store.index')}}"> 店家資訊</a>--}}
-            {{--<a href="{{route('meal.index')}}">餐點介紹</a>--}}
-            {{--<a href="{{route('task.index')}}">線上訂位</a>--}}
-            {{--<a href="{{route('wait.index')}}">查詢現場候位</a>--}}
-            {{--<a href="{{route('post.show')}}">最新消息</a>--}}
-
+            <a href="">預約訂位</a>
+            <a href="">現場候位</a>
         </div>
     </div>
+</div>
 </body>
 </html>
