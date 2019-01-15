@@ -43,9 +43,6 @@
             <li>
                 <a href="{{ route('allwait.index') }}"><i class="fa fa-fw fa-edit"></i>候位管理</a>
             </li>
-            <li>
-                <a href=""><i class="fa fa-fw fa-edit"></i>貼文管理</a>
-            </li>
         </ul>
     </div>
     <!-- /.navbar-collapse -->
