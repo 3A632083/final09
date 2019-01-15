@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Reservation;
+use App\Http\Requests;
 use Illuminate\Http\Request;
 
 class ReservationController extends Controller
@@ -17,15 +18,7 @@ class ReservationController extends Controller
         return view('reservation');
     }
 
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function create()
-    {
-        //
-    }
+
 
     /**
      * Store a newly created resource in storage.
@@ -35,7 +28,16 @@ class ReservationController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $request->user()->tasks()->create([
+            'name' => $request->name,
+            'people' => $request->people,
+            'phone' => $request->phone,
+            'store' => $request->store,
+            'date' => $request->date,
+            'time' => $request->time,
+        ]);
+
+        return redirect('reservationok');
     }
 
     /**
