@@ -18,7 +18,10 @@ class ReservationController extends Controller
 
     public function index()
     {
-        return view('reservation');
+        $reservations = Reservation::orderby('user_id')->get();
+        $total = $reservations->count('user_id');
+        $data=['total' => $total];
+        return view('reservation',$data);
     }
 
     public function __construct(ReservationRepository $reservations)
