@@ -25,3 +25,4 @@ Route::get('reservation',  ['as' => 'reservation.index',    'uses' => 'Reservati
 Route::get('reservationok',  ['as' => 'reservation.show',    'uses' => 'ReservationController@show']);
 Route::get('wait',  ['as' => 'wait.index',    'uses' => 'WaitController@index']);
 Route::get('/insertwait/{id}', 'WaitController@create');
+Route::post('/success/{id}', 'WaitController@store');

@@ -38,7 +38,15 @@ class WaitController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $request->user()->waits()->create([
+            'name' => $request->name,
+            'phone' => $request->phone,
+            'people' => $request->people,
+        ]);
+        $waits = Wait::orderby('user_id')->get();
+        $total = $waits->count('user_id');
+        $data=['total' => $total];
+        return view('success',$data);
     }
 
     /**
