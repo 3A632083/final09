@@ -16,8 +16,8 @@ class AllReservationController extends Controller
 
     public function status(Request $request, $id)
     {
-        $task=Reservation::find($id);
-        $task->update([
+        $reservation=Reservation::find($id);
+        $reservation->update([
             'status' => $request->status,
         ]);
         return redirect('/allreservation');
