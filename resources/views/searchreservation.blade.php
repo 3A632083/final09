@@ -6,7 +6,7 @@
 
     <!-- Page Header -->
     <!-- Set your background image for this header on the line below. -->
-    <header class="intro-header" style="background-image: url('img/index00.jpg')">
+    <header class="intro-header" style="background-image: url('img/00.jpg')">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
@@ -54,7 +54,7 @@
                                 <td>{{ $reservation->status }}</td>
                                 <td></td>
                                 <td>
-                                    <form action="/task/{{ $task->id }}" method="POST">
+                                    <form action="/reservation/{{ $reservation->id }}" method="POST">
                                         {{ csrf_field() }}
                                         {{ method_field('DELETE') }}
 

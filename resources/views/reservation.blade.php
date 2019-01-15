@@ -5,7 +5,7 @@
 @section('content')
 
     <!-- Bootstrap 樣板... -->
-    <header class="intro-header" style="background-image: url('img/index00.jpg')">
+    <header class="intro-header" style="background-image: url('img/00.jpg')">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
@@ -58,7 +58,7 @@
                 <label for="reservation-date" class="col-sm-3 control-label">日期</label>
 
                 <div class="col-sm-6">
-                    <input type="date" name="date" value="<?php echo date("Y-m-d",strtotime('+1day'));?>" min="<?php echo date("Y-m-d",strtotime('+1day'));?>" max="<?php echo date("Y-m-d",strtotime('+6day'));?>" id="task-date" class="form-control">
+                    <input type="date" name="date" value="<?php echo date("Y-m-d",strtotime('+1day'));?>" min="<?php echo date("Y-m-d",strtotime('+1day'));?>" max="<?php echo date("Y-m-d",strtotime('+6day'));?>" id="reservation-date" class="form-control">
                 </div>
             </div>
 

@@ -15,6 +15,7 @@ class ReservationController extends Controller
      * @return \Illuminate\Http\Response
      */
     protected $reservations;
+
     public function index()
     {
         return view('reservation');
