@@ -35,10 +35,10 @@
     <div class="collapse navbar-collapse navbar-ex1-collapse">
         <ul class="nav navbar-nav side-nav">
             <li class="active">
-                <a href=""><i class="fa fa-fw fa-dashboard"></i>主控台</a>
+                <a href="{{ route('admin.index') }}"><i class="fa fa-fw fa-dashboard"></i>主控台</a>
             </li>
             <li>
-                <a href=""><i class="fa fa-fw fa-edit"></i>預約管理</a>
+                <a href="{{ route('allreservation.index') }}"><i class="fa fa-fw fa-edit"></i>預約管理</a>
             </li>
             <li>
                 <a href=""><i class="fa fa-fw fa-edit"></i>候位管理</a>
