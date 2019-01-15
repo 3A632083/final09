@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Admin;
 use App\Wait;
 use Illuminate\Http\Request;
 use App\Repositories\WaitRepository;
@@ -13,11 +14,12 @@ class WaitController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index(Request $request)
     {
-        $wenxins = Wait::orderby('user_id')->get();
-        $total = $wenxins->count('user_id');
-        $data=['total' => $total];
+        $waits = Wait::orderby('user_id')->get();
+        $total = $waits->count('user_id');
+        $admins= Admin::where('user_id', $request->user()->id)->get();
+        $data=['total' => $total,'admins' => $admins];
         return view('wait',$data);
     }
 
@@ -104,4 +106,5 @@ class WaitController extends Controller
         $this->middleware('auth');
         $this->waits = $waits;
     }
+
 }
