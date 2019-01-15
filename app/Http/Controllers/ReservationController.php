@@ -39,7 +39,7 @@ class ReservationController extends Controller
      */
     public function store(Request $request)
     {
-        $request->user()->tasks()->create([
+        $request->user()->reservations()->create([
             'name' => $request->name,
             'people' => $request->people,
             'phone' => $request->phone,
