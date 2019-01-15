@@ -44,3 +44,6 @@ Route::patch('/reservation/status/{id}', 'AllReservationController@status');
 Route::get('allwait',  ['as' => 'allwait.index',    'uses' => 'AllwaitController@index']);
 Route::get('/allwait/{id}', 'AllwaitController@index');
 Route::patch('/wait/status/{id}', 'AllWaitController@status');
+Route::post('/wait/inline', 'AllwaitController@inline');
+Route::patch('/num/{id}', 'AdminController@num');
+Route::patch('/time/{id}', 'AdminController@time');
