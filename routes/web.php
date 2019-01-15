@@ -41,3 +41,6 @@ Route::get('count',  ['as' => 'admin.index',    'uses' => 'AdminController@index
 Route::get('/allreservation', 'AllReservationController@index');
 Route::get('allreservation',  ['as' => 'allreservation.index',    'uses' => 'AllReservationController@index']);
 Route::patch('/reservation/status/{id}', 'AllReservationController@status');
+Route::get('allwait',  ['as' => 'allwait.index',    'uses' => 'AllwaitController@index']);
+Route::get('/allwait/{id}', 'AllwaitController@index');
+Route::patch('/wait/status/{id}', 'AllWaitController@status');
