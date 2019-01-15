@@ -26,7 +26,7 @@
             <div class="row">
                 <div class="page-header">
                     <div class="row">
-                        <form action="/wenxins/{id}" method="POST">
+                        <form action="/success/{id}" method="POST">
                             {{ csrf_field() }}
                         <table class="table table-hover">
                             <thead>
