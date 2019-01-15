@@ -38,3 +38,6 @@ Route::get('searchwait',  ['as' => 'searchwait.index',    'uses' => 'SearchwaitC
 Route::delete('/wait/{wait}', 'WaitController@destroy');
 Route::get('/admin', 'AdminController@index');
 Route::get('count',  ['as' => 'admin.index',    'uses' => 'AdminController@index']);
+Route::get('/allreservation', 'AllReservationController@index');
+Route::get('allreservation',  ['as' => 'allreservation.index',    'uses' => 'AllReservationController@index']);
+Route::patch('/reservation/status/{id}', 'AllReservationController@status');
