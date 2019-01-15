@@ -23,7 +23,7 @@
                     <a href="{{route('wait.index')}}"><h5>現場候位</h5></a>
                 </li>
                 <li>
-                    <a href=""><h5>查詢候位資訊</h5></a>
+                    <a href="{{route('searchwait.index')}}"><h5>查詢候位資訊</h5></a>
                 </li>
             </ul>
         </div>
