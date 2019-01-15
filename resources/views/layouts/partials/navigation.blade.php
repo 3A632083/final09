@@ -13,26 +13,18 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
-
-
-                <li>
-                    <a href="{{route('member.show')}}"><h5>會員基本資料</h5></a>
-                </li>
-                <li>
-                    <a href="{{route('task.index')}}"><h5>線上訂位</h5></a>
-                </li>
-                <li>
-                    <a href="{{route('searchreservation.show')}}"><h5>查詢訂位資訊</h5></a>
-                </li>
-
-
                 <li>
                     <a href=""><h5>預約訂位</h5></a>
                 </li>
                 <li>
+                    <a href=""><h5>查詢訂位資訊</h5></a>
+                </li>
+                <li>
                     <a href="{{route('wait.index')}}"><h5>現場候位</h5></a>
                 </li>
-
+                <li>
+                    <a href=""><h5>查詢後位資訊</h5></a>
+                </li>
             </ul>
         </div>
         <!-- /.navbar-collapse -->
