@@ -37,3 +37,4 @@ Route::post('/success/{id}', 'WaitController@store');
 Route::get('searchwait',  ['as' => 'searchwait.index',    'uses' => 'SearchwaitController@index']);
 Route::delete('/wait/{wait}', 'WaitController@destroy');
 Route::get('/admin', 'AdminController@index');
+Route::get('count',  ['as' => 'admin.index',    'uses' => 'AdminController@index']);
