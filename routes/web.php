@@ -26,3 +26,5 @@ Route::get('reservationok',  ['as' => 'reservation.show',    'uses' => 'Reservat
 Route::get('wait',  ['as' => 'wait.index',    'uses' => 'WaitController@index']);
 Route::get('/insertwait/{id}', 'WaitController@create');
 Route::post('/success/{id}', 'WaitController@store');
+Route::get('searchwait',  ['as' => 'searchwait.index',    'uses' => 'SearchwaitController@index']);
+Route::delete('/wait/{wait}', 'WaitController@destroy');
