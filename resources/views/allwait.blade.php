@@ -20,7 +20,7 @@
                 <div class="page-header">
                     <h1>候位紀錄</h1>
                     <tr>
-                        <form action="/wenxin/waittime/{id}" method="POST" >
+                        <form action="/time/{id}" method="POST" >
                             {{ csrf_field() }}
                             {{ method_field('PATCH') }}
                             <label for="time" class="col-sm-2 control-label">目前<br>等候時間約為:</label>
@@ -35,7 +35,7 @@
                             <div class="row">
                                 <div class="page-header">
                     <tr>
-                        <form action="/wenxin/num/{id}" method="POST" >
+                        <form action="/num/{id}" method="POST" >
                             {{ csrf_field() }}
                             {{ method_field('PATCH') }}
                             <label for="time" class="col-sm-2 control-label">目前<br>叫號:</label>
@@ -88,8 +88,9 @@
                                             <button type="submit" class="btn btn-success">
                                                 <i class="fa fa-plus"></i>送出
                                             </button>
+                                        </td>
                                     </form>
-                                    </td>
+
                                     </td>
                                 </tr>
                             @endforeach
@@ -108,7 +109,7 @@
                             </thead>
                             <tbody>
                             <tr>
-                                <form action="/wenxins/store" method="POST">
+                                <form action="/wait/inline" method="POST">
                                     {{ csrf_field() }}
                                     <td>  <div class="form-group">
                                             <div class="col-sm-6">

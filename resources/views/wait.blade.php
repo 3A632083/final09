@@ -46,12 +46,12 @@
                         <th><span class="dot"><h1><p class="text-primary" style="text-align:center">{{$total}}</p></h1></span></th>
                         </div>
                         <div style="text-align:center">
-                        <th><span class="dot"><h1><p class="text-primary" style="text-align:center">24</p></h1></span></th>
+                        <th><span class="dot"><h1><p class="text-primary" style="text-align:center">{{$admins[0]->time}}<h3>分鐘</h3></h3></p></h1></span></th>
                         </div>
                         <div style="text-align:right">
-                        <th><span class="dot"><h1><p class="text-primary" style="text-align:center">24</p></h1></span></th>
+                        <th><span class="dot"><h1><p class="text-primary" style="text-align:center">{{$admins[0]->num}}</p></h1></span></th>
                        </div>
-                    </tr>
+                 </tr>
                      <tr>
                        <div style="text-align:left">
                          <label class="p-3 mb-1 bg-primary text-white">目前排隊組數</label>
@@ -73,7 +73,7 @@
                                 <form action="/insertwait/{id}" method="GET">
                                     {{ csrf_field() }}
                                     <div style="text-align:center">
-                                    @if($total>5)
+                                    @if($total>15)
                                         <button type="submit" disabled class="btn btn-info">
                                             <i class="fa fa-plus"></i>我要候位
                                         </button>
