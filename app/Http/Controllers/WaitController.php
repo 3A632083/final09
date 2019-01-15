@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Wait;
 use Illuminate\Http\Request;
+use App\Repositories\WaitRepository;
 
 class WaitController extends Controller
 {
@@ -91,6 +92,16 @@ class WaitController extends Controller
      */
     public function destroy(Wait $wait)
     {
-        //
+        $this->authorize('destroy', $wait);
+
+        $wait->delete();
+
+        return redirect('/searchwait');
+    }
+
+    public function __construct(WaitRepository $waits)
+    {
+        $this->middleware('auth');
+        $this->waits = $waits;
     }
 }
