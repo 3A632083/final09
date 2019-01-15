@@ -17,7 +17,7 @@
                     <a href=""><h5>預約訂位</h5></a>
                 </li>
                 <li>
-                    <a href=""><h5>查詢訂位資訊</h5></a>
+                    <a href="{{route('searchreservation.show')}}"><h5>查詢訂位資訊</h5></a>
                 </li>
                 <li>
                     <a href="{{route('wait.index')}}"><h5>現場候位</h5></a>

@@ -20,6 +20,14 @@ Route::get('/home', function () {
     return view('home.home');
 });
 
+Route::get('/reservations', 'ReservationController@index');
+Route::post('/reservation', 'ReservationController@store');
+Route::get('/searchreservation', 'ReservationController@index');
+Route::delete('/reservation/{reservation}', 'ReservationController@destroy');
+Route::get('reservation', ['as' => 'reservation.index',   'uses' => 'ReservationController@index']);
+Route::get('searchreservation',  ['as' => 'searchreservation.show',    'uses' => 'SearchReservationController@show']);
+
+
 Route::get('welcome',  ['as' => 'welcome.index',    'uses' => 'WelcomeController@index']);
 Route::get('reservation',  ['as' => 'reservation.index',    'uses' => 'ReservationController@index']);
 Route::get('reservationok',  ['as' => 'reservation.show',    'uses' => 'ReservationController@show']);

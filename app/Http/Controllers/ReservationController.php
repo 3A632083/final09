@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Reservation;
 use App\Http\Requests;
 use Illuminate\Http\Request;
+use App\Repositories\ReservationRepository;
 
 class ReservationController extends Controller
 {
@@ -13,11 +14,17 @@ class ReservationController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+    protected $reservations;
     public function index()
     {
         return view('reservation');
     }
 
+    public function __construct(ReservationRepository $reservations)
+    {
+        $this->middleware('auth');
+        $this->reservations = $reservations;
+    }
 
 
     /**
@@ -32,7 +39,7 @@ class ReservationController extends Controller
             'name' => $request->name,
             'people' => $request->people,
             'phone' => $request->phone,
-            'store' => $request->store,
+
             'date' => $request->date,
             'time' => $request->time,
         ]);
@@ -46,7 +53,7 @@ class ReservationController extends Controller
      * @param  \App\Reservation  $reservation
      * @return \Illuminate\Http\Response
      */
-    public function show(Reservation $reservation)
+    public function show()
     {
         return view('reservationok');
     }
@@ -74,14 +81,12 @@ class ReservationController extends Controller
         //
     }
 
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  \App\Reservation  $reservation
-     * @return \Illuminate\Http\Response
-     */
     public function destroy(Reservation $reservation)
     {
-        //
+        $this->authorize('destroy', $reservation);
+
+        $reservation->delete();
+
+        return redirect('/searchreservation');
     }
 }
