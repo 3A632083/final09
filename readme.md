@@ -1,4 +1,4 @@
-<p align="center"><img src="https://imgur.com/USDHjHb"></p>
+<p align="center"><img src="https://imgur.com/a/7kOxnSc"></p>
 
 ## 系統的作用
 
