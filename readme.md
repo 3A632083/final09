@@ -17,7 +17,7 @@
 - 刪除訂位[3A532083 劉宜樺](https://github.com/3A532083)
 - 線上候位[3A532085 江珮妤](https://github.com/3A532085)
 - 查詢候位[3A532085 江珮妤](https://github.com/3A532085)
--刪除候位[3A532085 江珮妤](https://github.com/3A532085)
+- 刪除候位[3A532085 江珮妤](https://github.com/3A532085)
 後台
 - 查看預約組數和候位組數[3A532085 江珮妤](https://github.com/3A532085)
 - 更改訂位、候位狀態[3A532085 江珮妤](https://github.com/3A532085)
@@ -34,11 +34,11 @@
 ## 額外使用的套件或樣板 
 
 前台樣板
--使畫面看起來不單調，讓使用者喜愛此系統
--[Clean Blog](https://startbootstrap.com/template-overviews/clean-blog/)
+- 使畫面看起來不單調，讓使用者喜愛此系統
+- [Clean Blog](https://startbootstrap.com/template-overviews/clean-blog/)
 後台樣板
--為製做簡易操作介面，讓管理者輕鬆使用
--[Side Bar](https://startbootstrap.com/template-overviews/simple-sidebar/)
+- 為製做簡易操作介面，讓管理者輕鬆使用
+- [Side Bar](https://startbootstrap.com/template-overviews/simple-sidebar/)
 
 
 ## 系統復原步驟
@@ -55,12 +55,12 @@
 
 ## 系統使用帳號
 
-前台-使用者
+前台-使用者<br>
 -帳號:123@gmail.com
--密碼:123456
+- 密碼:123456
 後台-管理者
--帳號:root@gmail.com
--密碼:123456
+- 帳號:root@gmail.com
+- 密碼:123456
 
 ## 系統開發人員
 
