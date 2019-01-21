@@ -12,18 +12,19 @@
 
 ## 系統的主要功能
 前台
-- 線上訂位[3A532083 劉宜樺](https://github.com/3A532083)
-- 查詢訂位[3A532083 劉宜樺](https://github.com/3A532083)
-- 刪除訂位[3A532083 劉宜樺](https://github.com/3A532083)
-- 線上候位[3A532085 江珮妤](https://github.com/3A532085)
-- 查詢候位[3A532085 江珮妤](https://github.com/3A532085)
-- 刪除候位[3A532085 江珮妤](https://github.com/3A532085)
+- 線上訂位(Route::get('/reservations')[3A532083 劉宜樺](https://github.com/3A532083)
+- 查詢訂位(Route::post('/reservation')[3A532083 劉宜樺](https://github.com/3A532083)
+- 刪除訂位(Route::delete('/reservation/{reservation}')[3A532083 劉宜樺](https://github.com/3A532083)
+- 線上候位(Route::get('/insertwait/{id}')[3A532085 江珮妤](https://github.com/3A532085)
+- 查詢候位(Route::get('searchwait')[3A532085 江珮妤](https://github.com/3A532085)
+- 刪除候位Route::delete('/wait/{wait}')[3A532085 江珮妤](https://github.com/3A532085)
 
 後台
-- 查看預約組數和候位組數[3A532085 江珮妤](https://github.com/3A532085)
-- 更改訂位、候位狀態[3A532085 江珮妤](https://github.com/3A532085)
-- 店家叫號[3A532085 江珮妤](https://github.com/3A532085)
-- 設定等候時間[3A532085 江珮妤](https://github.com/3A532085)
+- 查看預約組數和候位組數(Route::get('count')[3A532085 江珮妤](https://github.com/3A532085)
+- 更改訂位(Route::patch('/reservation/status/{id}')[3A532085 江珮妤](https://github.com/3A532085)
+- 候位狀態(Route::patch('/wait/status/{id}')[3A532085 江珮妤](https://github.com/3A532085)
+- 店家叫號(Route::patch('/num/{id}')[3A532085 江珮妤](https://github.com/3A532085)
+- 設定等候時間(Route::patch('/time/{id}')[3A532085 江珮妤](https://github.com/3A532085)
 
 ## 初始專案與DB負責的同學
 
