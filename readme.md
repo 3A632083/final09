@@ -43,16 +43,16 @@
 1. > 複製[https://github.com/WISD-2018/final09.git](https://github.com/WISD-2018/final09.git)本系統在GitHub的專案，打開Source tree，點選clone後
 2. > 打開cmder，切換至專案所在資料夾，cd final09
 3. > 在cmder輸入以下命令，以復原此系統：
-- composer install
-- composer run‐script post‐root‐package‐install
-- composer run‐script post‐create‐project‐cmd
+     - composer install
+     - composer run‐script post‐root‐package‐install
+     - composer run‐script post‐create‐project‐cmd
 4. > 開啟UwAmp，點選PHPMyAdmin，進入MySQL，建立新資料庫，名稱為final09，將final09.sql匯入(wagon\uwamp\www\final09\database\final09.sql)
 5. > 在UwAmp下，點選Apache config，選擇port 8000 ，並在Document Root 輸入{DOCUMENTPATH}/final09/public
 
 
 ## 系統使用帳號
 
-前台-使用者<br>
+前台-使用者
 - 帳號:123@gmail.com
 - 密碼:123456
 
