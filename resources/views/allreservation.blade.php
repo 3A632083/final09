@@ -51,10 +51,9 @@
                                     {{ method_field('PATCH') }}
                                     <td>
                                         <div class="col-sm-9">
-                                            <select name="status" class="form-control">
-                                                <option value="已入座">已入座</option>
-                                                <option value="保留中">保留中</option>
-                                                <option value="取消訂位">取消訂位</option>
+                                            <select name="status" class="form-control" onchange="window.document.location.href=this.options[this.selectedIndex].value;">
+                                                <option value="訂位成功">訂位成功</option>
+                                                <option value="訂位失敗">訂位失敗</option>
                                             </select>
                                         </div>
                                     </td>
