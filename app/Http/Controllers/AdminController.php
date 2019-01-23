@@ -16,7 +16,7 @@ class AdminController extends Controller
         $total = $waits->count('user_id');
         $reservations = Reservation::orderby('user_id')->get();
         $total2 = $reservations->count('user_id');
-        $data=['total' => $total,'total2' => $total2,];
+        $data=['total' => $total,'total2' => $total2];
         return view('count',$data);
     }
 
