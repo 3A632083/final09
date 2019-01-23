@@ -38,19 +38,21 @@
 
                             <th>日期</th>
                             <th>時間</th>
+                            <th>桌位</th>
                             <th>狀態</th>
                         </tr>
                         </thead>
                         <tbody>
                         @foreach ($reservations as $index => $reservation)
                             <tr>
-                                　　  <td>{{$index+1}}</td>
-                                　　<td>{{ $reservation->name}}</td>
+                                <td>{{$index+1}}</td>
+                                <td>{{ $reservation->name}}</td>
                                 <td>{{ $reservation->phone }}</td>
                                 <td>{{ $reservation->people}}</td>
 
                                 <td>{{ $reservation->date }}</td>
                                 <td>{{ $reservation->time }}</td>
+                                <td>{{ $reservation->seat }}</td>
                                 <td>{{ $reservation->status }}</td>
                                 <td></td>
                                 <td>

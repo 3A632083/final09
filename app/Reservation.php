@@ -12,7 +12,7 @@ class Reservation extends Model
      *
      * @var array
      */
-    protected $fillable = ['name','people','phone','store','date','time','status'];
+    protected $fillable = ['name','people','phone','store','date','time','seat','status'];
 
     /**
      * 取得擁有此任務的使用者。
@@ -21,6 +21,4 @@ class Reservation extends Model
     {
         return $this->belongsTo(User::class);
     }
-
-
 }
