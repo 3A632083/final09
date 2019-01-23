@@ -78,9 +78,8 @@
                                         <td>
                                             <div class="col-sm-9">
                                                 <select name="status" class="form-control">
-                                                    <option value="已入座">已入座</option>
-                                                    <option value="保留20分鐘">保留中</option>
-                                                    <option value="取消訂位">取消訂位</option>
+                                                    <option value="候位成功">候位成功</option>
+                                                    <option value="候位失敗">候位失敗</option>
                                                 </select>
                                             </div>
                                         </td>
