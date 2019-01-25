@@ -14,15 +14,15 @@
 
 ## 系統的主要功能
 前台
-- 線上訂位(Route::get('/reservations'))[3A532083 劉宜樺](https://github.com/3A532083)
+- 線上訂位(Route::get('/reservations'))[3A532083 劉宜樺](https://github.com/3A532083)、[3A532085 江珮妤](https://github.com/3A532085)
+- 預約訂位人數、訂位日期(Route::get('/stepone'))[3A532085 江珮妤](https://github.com/3A532085)
+- 預約訂位時段(Route::post('/step2/{id}'))[3A532085 江珮妤](https://github.com/3A532085)
+- 預約座位(Route::patch('/section2/{id}'))[3A532085 江珮妤](https://github.com/3A532085)
 - 查詢訂位(Route::post('/reservation'))[3A532083 劉宜樺](https://github.com/3A532083)
 - 刪除訂位(Route::delete('/reservation/{reservation}'))[3A532083 劉宜樺](https://github.com/3A532083)
 - 線上候位(Route::get('/insertwait/{id}'))[3A532085 江珮妤](https://github.com/3A532085)
 - 查詢候位(Route::get('searchwait'))[3A532085 江珮妤](https://github.com/3A532085)
 - 刪除候位(Route::delete('/wait/{wait}'))[3A532085 江珮妤](https://github.com/3A532085)
-- 預約訂位人數、訂位日期(Route::get('/stepone'))[3A532085 江珮妤](https://github.com/3A532085)
-- 預約訂位時段(Route::post('/step2/{id}'))[3A532085 江珮妤](https://github.com/3A532085)
-- 預約座位(Route::patch('/section2/{id}'))[3A532085 江珮妤](https://github.com/3A532085)
 
 後台
 - 查看預約組數和候位組數(Route::get('count'))[3A532085 江珮妤](https://github.com/3A532085)
