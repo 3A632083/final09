@@ -11,7 +11,7 @@
     <!-- Styles -->
     <style>
         html, body {
-            background-image: url('img/index00.jpg');
+            background-image: url('/img/index00.jpg');
             background-size:100%;
             color:#fff;
             font-family: 'Nunito', sans-serif;
