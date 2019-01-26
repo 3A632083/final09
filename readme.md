@@ -15,9 +15,9 @@
 ## 系統的主要功能
 前台
 - 線上訂位(Route::get('/reservations'))[3A532083 劉宜樺](https://github.com/3A532083)、[3A532085 江珮妤](https://github.com/3A532085)
-- 預約訂位人數、訂位日期(Route::get('/stepone'))[3A532085 江珮妤](https://github.com/3A532085)
-- 預約訂位時段(Route::post('/step2/{id}'))[3A532085 江珮妤](https://github.com/3A532085)
-- 預約座位(Route::patch('/section2/{id}'))[3A532085 江珮妤](https://github.com/3A532085)
+  - 預約訂位人數、訂位日期(Route::get('/stepone'))[3A532083 劉宜樺](https://github.com/3A532083)、[3A532085 江珮妤](https://github.com/3A532085)
+  - 預約訂位時段(Route::post('/step2/{id}'))[3A532083 劉宜樺](https://github.com/3A532083)、[3A532085 江珮妤](https://github.com/3A532085)
+  - 預約座位(Route::patch('/section2/{id}'))[3A532085 江珮妤](https://github.com/3A532085)
 - 查詢訂位(Route::post('/reservation'))[3A532083 劉宜樺](https://github.com/3A532083)
 - 刪除訂位(Route::delete('/reservation/{reservation}'))[3A532083 劉宜樺](https://github.com/3A532083)
 - 線上候位(Route::get('/insertwait/{id}'))[3A532085 江珮妤](https://github.com/3A532085)
@@ -46,15 +46,24 @@
 
 ## 系統復原步驟
 
-1. > 複製[https://github.com/WISD-2018/final09.git](https://github.com/WISD-2018/final09.git)本系統在GitHub的專案，打開Source tree，點選clone後
+1. > 複製[https://github.com/WISD-2018/final09.git](https://github.com/WISD-2018/final09.git)本系統在GitHub的專案，打開Source tree，點選clone
 2. > 打開cmder，切換至專案所在資料夾，cd final09
 3. > 在cmder輸入以下命令，以復原此系統：
      - composer install
      - composer run‐script post‐root‐package‐install
      - composer run‐script post‐create‐project‐cmd
-4. > 開啟UwAmp，點選PHPMyAdmin，進入MySQL，建立新資料庫，名稱為final09，將final09.sql匯入(wagon\uwamp\www\final09\database\final09.sql)
-5. > 在UwAmp下，點選Apache config，選擇port 8000 ，並在Document Root 輸入{DOCUMENTPATH}/final09/public
-
+4. > 將專案打開 在.env檔案內輸入資料庫主機IP、Port、名稱、與帳密如下：
+     DB_HOST=127.0.0.1
+     DB_PORT=33060
+     DB_DATABASE=final09
+     DB_USERNAME=root
+     DB_PASSWORD=root
+5. > 開啟UwAmp，點選PHPMyAdmin，輸入以下資料後並點擊登入，進入MySQL後，建立新資料庫，名稱為final09，將final09.sql(wagon\uwamp\www\final09\database\final09.sql)匯入
+     資料庫系統:MYSQL
+     伺服器:localhost:33060
+     帳號:root
+     密碼:root
+6. > 在UwAmp下，點選Apache config，選擇port 8000 ，並在Document Root 輸入{DOCUMENTPATH}/final09/public
 
 ## 系統使用帳號
 
