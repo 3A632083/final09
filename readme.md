@@ -34,7 +34,7 @@
 ## 初始專案與DB負責的同學
 
 - 初始專案 [3A532085 江珮妤](https://github.com/3A532085)
-- 資料庫及資料表建立、資料表關連[3A532085 江珮妤](https://github.com/3A532085)
+- 資料庫及資料表建立、資料表關連 [3A532085 江珮妤](https://github.com/3A532085)
 
 ## 額外使用的套件或樣板 
 
@@ -46,7 +46,9 @@
 
 ## 系統復原步驟
 
-1. > 複製[https://github.com/WISD-2018/final09.git](https://github.com/WISD-2018/final09.git)本系統在GitHub的專案，打開Source tree，點選clone
+1. > 複製[https://github.com/WISD-2018/final09.git](https://github.com/WISD-2018/final09.git)本系統在GitHub的專案，打開Source tree，點選clone後，輸入以下資料
+     - Source Path:https://github.com/WISD-2018/final09.git
+     - Destination Path:C:\wagon\uwamp\www\final09
 2. > 打開cmder，切換至專案所在資料夾，cd final09
 3. > 在cmder輸入以下命令，以復原此系統：
      - composer install
@@ -58,12 +60,14 @@
      - DB_DATABASE=final09
      - DB_USERNAME=root
      - DB_PASSWORD=root
-5. > 開啟UwAmp，點選PHPMyAdmin，輸入以下資料後並點擊登入，進入MySQL後，建立新資料庫，名稱為final09，將final09.sql(wagon\uwamp\www\final09\database\final09.sql)匯入
+5. > 在cmder輸入以下命令，將所有資料表產生至final09資料庫內
+     - php artisan migrate
+6. > 開啟UwAmp，點選PHPMyAdmin，輸入以下資料後並點擊登入，進入MySQL後，建立新資料庫，名稱為final09，將final09.sql(C:\wagon\uwamp\www\final09\database\final09.sql)匯入
      - 資料庫系統:MYSQL
      - 伺服器:localhost:33060
      - 帳號:root
      - 密碼:root
-6. > 在UwAmp下，點選Apache config，選擇port 8000 ，並在Document Root 輸入{DOCUMENTPATH}/final09/public
+7. > 在UwAmp下，點選Apache config，選擇port 8000 ，並在Document Root 輸入{DOCUMENTPATH}/final09/public
 
 ## 系統使用帳號
 
